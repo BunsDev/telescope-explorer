@@ -1,0 +1,19 @@
+.navbar {
+  position: absolute;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  z-index: 100;
+  background: transparent;
+  height: 72px;
+  color: white;
+  top: 0;
+}
+
+.logo {
+  width: 200px;
+}
+
+.transactionRowContainerSelected {
+  background: rgba(255, 255, 255, 0.1);
+}

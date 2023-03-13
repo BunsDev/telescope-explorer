@@ -1,0 +1,374 @@
+.container {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background: url("/noise.png"), #1a1b18 !important;
+  overflow: hidden;
+  position: relative;
+  padding-top: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contentContainer {
+  box-sizing: border-box;
+
+  width: 1436px;
+  height: 750px;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  z-index: 10;
+}
+
+.ellipseOne {
+  position: absolute;
+  width: 1005px;
+  height: 1005px;
+  left: -359px;
+  top: 358px;
+
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #594636 0%,
+    rgba(89, 70, 54, 0) 100%
+  );
+  opacity: 0.25;
+  z-index: 0;
+}
+
+.ellipseTwo {
+  position: absolute;
+  width: 1005px;
+  height: 1005px;
+  left: 817px;
+  top: -347px;
+
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #262825 0%,
+    rgba(38, 40, 37, 0) 100%
+  );
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.ellipseThree {
+  position: absolute;
+  width: 1207px;
+  height: 1207px;
+  left: -500px;
+  top: 0px;
+
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(214, 144, 101, 0.2) 0%,
+    rgba(226, 189, 160, 0) 100%
+  );
+}
+
+.header {
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.titleContainer {
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.titleDivider {
+  margin-top: 0 !important;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  ) !important;
+}
+
+.fiatBalance {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+.ethBalance {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.overviewContainer {
+  width: 30%;
+  height: 100%;
+  padding: 1rem 2rem;
+}
+
+.overviewHeaderContainer {
+  width: 100%;
+  align-items: flex-start !important;
+}
+
+.transactionContainer {
+  width: 70%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 0 !important;
+}
+
+.transactionContentContainer {
+  width: 100%;
+  height: 670px;
+  padding: 1rem 2rem;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.transactionTitleContainer {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.transactionHeaderContainer {
+  width: 100%;
+  color: white !important;
+}
+
+.transactionHeaderLabel {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  padding: 1rem !important;
+  color: white !important;
+}
+
+.isSwitchOn {
+  box-shadow: 0px 0px 10px #da8e5c !important;
+  border-radius: 40px;
+  border: none !important;
+  outline: none !important;
+}
+
+.isSwitchOff {
+  border: none !important;
+  outline: none !important;
+}
+
+.contentDivider {
+  margin: 0 !important;
+  height: 100%;
+  width: 1px;
+  background: linear-gradient(
+    to top,
+    rgba(214, 144, 101, 1),
+    rgba(126, 85, 59, 0.5885),
+    rgba(255, 255, 255, 0)
+  ) !important;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.tokenContainer {
+  width: 100%;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.tokenTableContainer {
+  width: 100%;
+  height: 220px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* width */
+.tokenTableContainer::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.tokenTableContainer::-webkit-scrollbar-track {
+  background: #8b8b8b;
+}
+
+/* Handle */
+.tokenTableContainer::-webkit-scrollbar-thumb {
+  background: rgb(74, 74, 74);
+}
+
+/* Handle on hover */
+.tokenTableContainer::-webkit-scrollbar-thumb:hover {
+  background: rgb(56, 56, 56);
+}
+
+.tokenRowContainer {
+  width: 80%;
+  justify-content: space-between !important;
+  align-items: space-between !important;
+  padding: 0.5rem;
+}
+
+.tokenLogo {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+
+  opacity: 0.9;
+  filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.25));
+}
+
+.networkLogo {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: -2px;
+  right: -2px;
+
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.25));
+}
+
+.bridgeSource {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0px;
+
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.25));
+  z-index: 10;
+}
+
+.bridgeDest {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 0px;
+
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.25));
+  z-index: 10;
+}
+
+.bridgeDot {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  right: 0px;
+  background: #d9d9d9;
+
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.25));
+  z-index: 2;
+
+  -webkit-animation: linear infinite;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 1s;
+}
+
+@-webkit-keyframes run {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 50px;
+  }
+}
+
+.bridgeContainer {
+  position: relative;
+}
+
+.bridgeLine {
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background: #737373;
+}
+
+.networkLogoTxn {
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 0.25));
+}
+
+.tokenLogoContainer {
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+
+.tableContainer {
+  width: 100%;
+  overflow-y: scroll;
+  max-height: "300px";
+  overflow-x: hidden;
+}
+
+/* width */
+.tableContainer::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.tableContainer::-webkit-scrollbar-track {
+  background: #8b8b8b;
+}
+
+/* Handle */
+.tableContainer::-webkit-scrollbar-thumb {
+  background: rgb(74, 74, 74);
+}
+
+/* Handle on hover */
+.tableContainer::-webkit-scrollbar-thumb:hover {
+  background: rgb(56, 56, 56);
+}
+
+.transactionRowContainer {
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.transactionCell {
+  padding: 1rem 0.9rem !important;
+}
+
+.transactionRowContainer:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.graphViewButton {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 10px !important;
+  padding: 0.5rem 1rem !important;
+  transition: 2s ease-in-out;
+}
+
+.graphViewButton:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+}
